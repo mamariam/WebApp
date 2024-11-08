@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Bancaire</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body >
+
+   <!-- Page Container -->
+      <div class="bg-indigo-900 min-h-screen p-6 text-white">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-8">
+            <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-full bg-amber-100 overflow-hidden">
+                        <!-- Avatar image here -->
+                  </div>
+                  <div>
+                        <p class="text-gray-300">Hello,</p>
+                        <p class="font-semibold text-xl">Abdullah!</p>
+                  </div>
+            </div>
+            <div class="text-gray-300">
+                  <!-- Settings icon would go here -->
+            </div>
+            </div>
+      
+            <!-- Balance Card -->
+            <div class="bg-indigo-800 rounded-3xl p-6 mb-8">
+            <p class="text-gray-300 mb-2">Main balance</p>
+            <p class="text-4xl font-bold mb-8">$14,235.34</p>
+            
+            <div class="flex justify-between">
+                  <div class="flex flex-col items-center">
+                        <div class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center mb-2">
+                        <!-- Up arrow icon -->
+                        </div>
+                        <span class="text-sm">Top up</span>
+                  </div>
+                  
+                  <div class="flex flex-col items-center">
+                        <div class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center mb-2">
+                        <!-- Down arrow icon -->
+                        </div>
+                        <span class="text-sm">Withdraw</span>
+                  </div>
+                  
+                  <div class="flex flex-col items-center">
+                        <div class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center mb-2">
+                        <!-- Transfer icon -->
+                        </div>
+                        <span class="text-sm">Transfer</span>
+                  </div>
+            </div>
+            </div>
+      
+            <!-- Recent Transfers -->
+            <div class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Recent Transfers</h2>
+            <div class="flex gap-4">
+                  <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center">
+                        <span class="text-indigo-900 text-2xl">+</span>
+                  </div>
+                  <div class="w-16 h-16 rounded-full bg-amber-100"></div>
+                  <div class="w-16 h-16 rounded-full bg-pink-200"></div>
+                  <div class="w-16 h-16 rounded-full bg-orange-500"></div>
+                  <div class="w-16 h-16 rounded-full bg-yellow-400"></div>
+            </div>
+            </div>
+      
+            <!-- Latest Transactions -->
+            <div>
+            <div class="flex justify-between items-center mb-4">
+                  <h2 class="text-xl font-bold">Latest Transactions</h2>
+                  <a href="#" class="text-gray-400">View all</a>
+            </div>
+            
+            <!-- Transaction Items -->
+            <div class="space-y-4">
+                  <!-- Walmart Transaction -->
+                  <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                              <!-- Walmart icon -->
+                        </div>
+                        <div>
+                              <p class="font-semibold">Walmart</p>
+                              <p class="text-gray-400 text-sm">Today 12:32</p>
+                        </div>
+                        </div>
+                        <span class="text-red-500">-$35.23</span>
+                  </div>
+      
+                  <!-- Top up Transaction -->
+                  <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                              <!-- Top up icon -->
+                        </div>
+                        <div>
+                              <p class="font-semibold">Top up</p>
+                              <p class="text-gray-400 text-sm">Yesterday 02:12</p>
+                        </div>
+                        </div>
+                        <span class="text-green-500">+$430.00</span>
+                  </div>
+      
+                  <!-- Netflix Transaction -->
+                  <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center">
+                              <!-- Netflix icon -->
+                        </div>
+                        <div>
+                              <p class="font-semibold">Netflix</p>
+                              <p class="text-gray-400 text-sm">Dec 24 13:53</p>
+                        </div>
+                        </div>
+                        <span class="text-red-500">-$13.00</span>
+                  </div>
+            </div>
+            </div>
+      </div>
+    <!--- footer -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200">
+      <div class="flex justify-around items-center py-2">
+        <!-- Home -->
+        <div class="flex flex-col items-center px-4 py-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+          <span class="text-xs mt-1 text-purple-600">Home</span>
+        </div>
+    
+        <!-- History -->
+        <div class="flex flex-col items-center px-4 py-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span class="text-xs mt-1 text-gray-600">History</span>
+        </div>
+    
+        <!-- Cards -->
+        <div class="flex flex-col items-center px-4 py-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+          </svg>
+          <span class="text-xs mt-1 text-gray-600">Cards</span>
+        </div>
+    
+        <!-- More -->
+        <div class="flex flex-col items-center px-4 py-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+          </svg>
+          <span class="text-xs mt-1 text-gray-600">More</span>
+        </div>
+      </div>
+    </nav>
+    
+</body>
+</html>
