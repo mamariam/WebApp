@@ -9,75 +9,87 @@
 <body>
 
    <!-- Conteneur de la page -->
-      <div class="bg-purple-900 min-h-screen p-6 text-white">
-            <!-- En-tête -->
-            <div class="flex justify-between items-center mb-8">
-            <div class="flex items-center gap-3">
-                  <div class="w-12 h-12 rounded-full bg-amber-100 overflow-hidden">
-                        <!-- Image de l'avatar ici -->
-                  </div>
-                  <div>
-                        <p class="text-gray-300">Bonjour,</p>
-                        <p class="font-semibold text-xl">Abdullah !</p>
-                  </div>
-            </div>
-            <div class="text-gray-300">
-                  <!-- Icône des paramètres ici -->
-            </div>
-            </div>
-      
-            <!-- Carte de solde principal -->
-            <div class="bg-indigo-800 rounded-3xl p-6 mb-8">
-            <p class="text-gray-300 mb-2">Solde principal</p>
-            <p class="text-4xl font-bold mb-8">14235,34 €</p>
+      <div class=" bg-purple-800 h-300 p-6 text-dark ">
             
-            <div class="flex justify-between">
-                  <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center mb-2">
-                        <!-- Icône de rechargement -->
+                  <!-- En-tête -->
+                  <div class=" flex justify-between items-center mb-8">
+                  <div class="flex items-center gap-3">
+                        <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                              <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
                         </div>
-                        <span class="text-sm">Recharger</span>
+                        <div>
+                              <p class="text-gray-300">Bonjour,</p>
+                              <p class="font-semibold text-xl">Abdullah !</p>
+                        </div>
                   </div>
-                  
-                  <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center mb-2">
-                        <!-- Icône de retrait -->
-                        </div>
-                        <span class="text-sm">Retirer</span>
+                  <div class="text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" heigth="25" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                              <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                        </svg>
                   </div>
+                  </div>
+            
+            
+                  <div class="bg-indigo-900 rounded-2xl p-6 mb-8 ">
+                  <p class="text-gray-300 mb-2 text-center">Solde principal</p>
+                  <p class="text-4xl font-bold mb-8 text-center">14235,34 €</p>
                   
-                  <div class="flex flex-col items-center">
-                        <div class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center mb-2">
-                        <!-- Icône de transfert -->
+                  <div class="flex justify-between">
+                        <div class="flex flex-col items-center">
+                              <div class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center mb-2">
+                              <!-- Icône de rechargement -->
+                              </div>
+                              <span class="text-sm">Recharger</span>
                         </div>
-                        <span class="text-sm">Transférer</span>
+                        
+                        <div class="flex flex-col items-center">
+                              <div class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center mb-2">
+                              <!-- Icône de retrait -->
+                              </div>
+                              <span class="text-sm">Retirer</span>
+                        </div>
+                        
+                        <div class="flex flex-col items-center">
+                              <div class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center mb-2">
+                              <!-- Icône de transfert -->
+                              </div>
+                              <span class="text-sm">Transférer</span>
+                        </div>
+                  </div>
                   </div>
             </div>
-            </div>
-      
             <!-- Transferts récents -->
-            <div class="mb-8">
-            <h2 class="text-xl font-bold mb-4">Transferts récents</h2>
-            <div class="flex gap-4">
-                  <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center">
-                        <span class="text-indigo-900 text-2xl">+</span>
+            <div class="mb-8 ml-6 mt-8">
+            <h2 class="text-xl font-bold mb-4 ">Transferts récents</h2>
+            <div class="flex gap-8 ">
+                  <svg class="w-[27px] h-[27px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13V7.757Z" clip-rule="evenodd"/>
+                  </svg>
+                  <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                        <span class="font-medium text-gray-600 dark:text-gray-300">BS</span>
                   </div>
-                  <div class="w-16 h-16 rounded-full bg-amber-100"></div>
-                  <div class="w-16 h-16 rounded-full bg-pink-200"></div>
-                  <div class="w-16 h-16 rounded-full bg-orange-500"></div>
-                  <div class="w-16 h-16 rounded-full bg-yellow-400"></div>
+                  <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                        <span class="font-medium text-gray-600 dark:text-gray-300">AM</span>
+                  </div>
+                  <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                        <span class="font-medium text-gray-600 dark:text-gray-300">JS</span>
+                  </div>
+  
+                  <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                        <span class="font-medium text-gray-600 dark:text-gray-300">MD</span>
+                  </div>
             </div>
             </div>
       
-            <!-- Dernières transactions -->
+            
             <div>
-            <div class="flex justify-between items-center mb-4">
+            <div class="flex justify-between items-center  ml-6  ">
                   <h2 class="text-xl font-bold">Dernières transactions</h2>
-                  <a href="#" class="text-gray-400">Voir tout</a>
+                  <a href="#" class="text-gray-400 mr-6">Voir tout</a>
             </div>
             
             <!-- Éléments de transaction -->
-            <div class="space-y-4">
+            <div class="space-y-5 m-6">
                   <!-- Transaction Walmart -->
                   <div class="flex items-center justify-between">
                         <div class="flex items-center gap-3">
@@ -93,7 +105,7 @@
                   </div>
       
                   <!-- Transaction de rechargement -->
-                  <div class="flex items-center justify-between">
+                  <div class="flex items-center justify-between ">
                         <div class="flex items-center gap-3">
                         <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
                               <!-- Icône de rechargement -->
@@ -105,12 +117,38 @@
                         </div>
                         <span class="text-green-500">+430,00 €</span>
                   </div>
+                  <!-- Transaction de rechargement -->
+                  <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                              <!-- Icône de rechargement -->
+                        </div>
+                        <div>
+                              <p class="font-semibold">Transferts</p>
+                              <p class="text-gray-400 text-sm">Hier 02:12</p>
+                        </div>
+                        </div>
+                        <span class="text-green-500">+430,00 €</span>
+                  </div>
+                  <!-- Transaction de rechargement -->
+                  <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                              <!-- Icône de rechargement -->
+                        </div>
+                        <div>
+                              <p class="font-semibold">Abonnement</p>
+                              <p class="text-gray-400 text-sm">Hier 02:12</p>
+                        </div>
+                        </div>
+                        <span class="text-green-500">+430,00 €</span>
+                  </div>
       
-                  <!-- Transaction Netflix -->
+            
                   <div class="flex items-center justify-between">
                         <div class="flex items-center gap-3">
                         <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center">
-                              <!-- Icône Netflix -->
+                        
                         </div>
                         <div>
                               <p class="font-semibold">Netflix</p>
@@ -123,10 +161,10 @@
             </div>
       </div>
     
-    <!-- Pied de page -->
+
     <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200">
       <div class="flex justify-around items-center py-2">
-        <!-- Accueil -->
+        
         <div class="flex flex-col items-center px-4 py-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -134,7 +172,7 @@
           <span class="text-xs mt-1 text-purple-600">Accueil</span>
         </div>
     
-        <!-- Historique -->
+        
         <div class="flex flex-col items-center px-4 py-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
