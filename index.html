@@ -37,8 +37,8 @@
                   <div class="flex justify-between">
                         <div class="flex flex-col items-center">
                               <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center mb-2">
-                                    <svg class="h-8 w-8 text-green-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
                                     </svg>
                               </div>
                               <span class="text-sm">Recharger</span>
@@ -46,9 +46,8 @@
                         
                         <div class="flex flex-col items-center">
                               <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center mb-2">
-                                    <svg class="h-8 w-8 text-green-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
-                                          <path stroke="none" d="M0 0h24v24H0z"/>  
-                                          <path d="M18 6h-6a3 3 0 0 0 -3 3v10l-5 -5m10 0l-5 5" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6"/>
                                     </svg>
                               </div>
                               <span class="text-sm">Retirer</span>
@@ -144,15 +143,18 @@
                         <!-- Transaction de rechargement -->
                         <div class="flex items-center justify-between">
                               <div class="flex items-center gap-3">
-                              <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
-                                    <!-- Icône de rechargement -->
+                                    <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                                          <!-- Icône de rechargement -->
+                                    </div>
+                                    <div>
+                                          <p class="font-semibold">Abonnement</p>
+                                          <p class="text-gray-400 text-sm">Hier 02:12</p>
+                                    </div>
                               </div>
-                              <div>
-                                    <p class="font-semibold">Abonnement</p>
-                                    <p class="text-gray-400 text-sm">Hier 02:12</p>
-                              </div>
-                              </div>
-                              <span class="text-green-500">+430,00 €</span>
+                              <span class="text-green-500">+230,00 €</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                              </svg>
                         </div>
             
                   
@@ -166,7 +168,12 @@
                                     <p class="text-gray-400 text-sm">24 Déc 13:53</p>
                               </div>
                               </div>
-                              <span class="text-red-500">-13,00 €</span>
+                              <div class="flex ">
+                                    <span class="text-red-500">-13,00 €</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                    </svg>
+                              </div>
                         </div>
                   </div>
                   </div>
